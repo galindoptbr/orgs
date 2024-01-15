@@ -1,10 +1,10 @@
-import { SafeAreaView, StatusBar, View } from "react-native";
+import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
 import Home from "./src/screens/Home";
 
 export default function App() {
   return (
     <>
-      <SafeAreaView>
+      <SafeAreaView style={styles.screen}>
         <StatusBar />
         <View>
           <Home />
@@ -13,3 +13,9 @@ export default function App() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+  }
+});
